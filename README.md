@@ -1,5 +1,6 @@
 # 🚀 Crypto Monitor Indonesia
 
+![Project Banner](https://sourcecodejournal.dev/assets/projects/CryptoMonitor.png)
 Crypto Monitor Indonesia adalah aplikasi web statis untuk memantau **harga aset kripto secara real-time dalam Rupiah (IDR)**.  
 Data diambil langsung dari **CoinGecko API** dan diperbarui otomatis setiap 60 detik.
 
