@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Crypto Monitor Indonesia – Harga Kripto Real-Time Rupiah</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Crypto Monitor Indonesia menampilkan harga aset kripto real-time dalam Rupiah. Data akurat dari CoinGecko dengan update otomatis setiap 60 detik.">
+    <meta name="author" content="Azmi Jalaluddin Amron">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://crypto.sourcecodejournal.dev/">
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Crypto Monitor Indonesia">
+    <meta property="og:url" content="https://crypto.sourcecodejournal.dev/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Crypto Monitor Indonesia – Harga Kripto Real-Time">
+    <meta property="og:description" content="Pantau harga kripto real-time dalam Rupiah. Update otomatis setiap 60 detik.">
+    <meta property="og:image" content="https://crypto.sourcecodejournal.dev/og-image.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Crypto Monitor Indonesia">
+    <meta name="twitter:description" content="Harga kripto real-time dalam Rupiah. Data dari CoinGecko.">
+    <meta name="twitter:image" content="https://crypto.sourcecodejournal.dev/og-image.png">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Crypto Monitor Indonesia",
+      "url": "https://crypto.sourcecodejournal.dev/",
+      "author": {
+        "@type": "Person",
+        "name": "Azmi Jalaluddin Amron",
+        "url": "https://sourcecodejournal.dev"
+      },
+      "inLanguage": "id-ID",
+      "description": "Website pemantau harga kripto real-time dalam Rupiah."
+    }
+    </script>
+</head>
+
+<body>
+<div class="container">
+
+    <header class="header">
+        <h1 class="app-title">
+            <i class="fab fa-bitcoin fa-spin-pulse" aria-hidden="true"></i>
+            Crypto<span class="accent">Monitor</span>
+        </h1>
+
+        <div class="search-box">
+            <i class="fas fa-search" aria-hidden="true"></i>
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Cari Bitcoin, Ethereum..."
+                aria-label="Cari aset kripto">
+        </div>
+    </header>
+
+    <main>
+        <section class="table-container" aria-live="polite">
+            <table aria-label="Daftar harga kripto">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Aset</th>
+                    <th>Harga</th>
+                    <th>24h %</th>
+                    <th class="hide-mobile">Volume (24h)</th>
+                    <th class="hide-mobile">Market Cap</th>
+                </tr>
+                </thead>
+                <tbody id="cryptoTable"></tbody>
+            </table>
+
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>Memuat data pasar kripto…</p>
+            </div>
+
+            <div id="error-msg" class="error-msg hidden">
+                <p>⚠️ API limit tercapai. Coba lagi dalam 1 menit.</p>
+            </div>
+
+            <div id="empty-state" class="empty hidden">
+                <p>🔍 Aset tidak ditemukan</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Data oleh <strong>CoinGecko API</strong> • Update otomatis 60 detik
+            <br>
+            © 2025 <a href="https://sourcecodejournal.dev" target="_blank" rel="noopener">Azmi Jalaluddin Amron</a>
+        </p>
+    </footer>
+
+</div>
+
+<script src="scripts.js" defer></script>
+</body>
+</html>
