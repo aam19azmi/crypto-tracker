@@ -44,7 +44,7 @@ Data diambil langsung dari **CoinGecko API** dan diperbarui otomatis setiap 60 d
 ## ⚙️ Cara Menjalankan Secara Lokal
 
 1. Clone repository:
-   git clone [https://github.com/username/crypto-monitor.git](https://github.com/aam19azmi/crypto-tracker.git)
+   git clone [https://github.com/aam19azmi/crypto-tracker.git](https://github.com/aam19azmi/crypto-tracker.git)
 2. Masuk ke folder:
 cd crypto-monitor
 3. Buka index.html langsung di browser
