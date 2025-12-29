@@ -49,3 +49,17 @@ Data diambil langsung dari **CoinGecko API** dan diperbarui otomatis setiap 60 d
 cd crypto-monitor
 3. Buka index.html langsung di browser
 (tidak perlu server tambahan)
+
+⚠️ Catatan API
+Data bersumber dari CoinGecko API
+Terdapat limit request
+Jika limit tercapai, akan muncul pesan error otomatis
+
+👨‍💻 Author
+Azmi Jalaluddin Amron
+🌐 Website: https://sourcecodejournal.dev
+💼 Portfolio Project
+
+📜 Lisensi
+Proyek ini bersifat open-source dan bebas digunakan untuk pembelajaran dan portfolio.
+Silakan fork, modifikasi, dan kembangkan lebih lanjut 🚀
